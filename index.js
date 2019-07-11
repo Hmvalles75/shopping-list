@@ -3,8 +3,10 @@ $(function() {
     event.target.closest('li').remove();
  });
  $('.shopping-list').on('click', '.shopping-item-toggle', event => {
-     console.log(event.target.closest('span'));
-    event.target.closest('.shopping-item').toggleClass('.shopping-item__checked');
-});
+     let toggle = $(event.target.closest('li')).children('.shopping-item');
+    console.log(toggle);
+    toggle.toggleClass('shopping-item__checked');
+ });
+
 });
 
