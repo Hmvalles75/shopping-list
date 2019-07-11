@@ -7,6 +7,6 @@ $(function() {
     console.log(toggle);
     toggle.toggleClass('shopping-item__checked');
  });
-
+ 
 });
 
